@@ -1,0 +1,8 @@
+[
+     {"matricula" : 7654321,
+     "nome" : "John Doe",
+     "curso" : "Engenharia de Software"},
+    {"matricula" : 1234567,
+    "nome" : "Maria da Silva",
+    "curso" : "Engenharia de Computação"}
+]

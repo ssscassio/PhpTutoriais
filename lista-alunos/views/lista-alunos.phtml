@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta   charset="utf-8">
+    <title><?= $title?></title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Matrícula</th>
+            <th>Nome</th>
+            <th>Curso</th>
+        </tr>
+        <?php foreach ($alunos as $aluno): ?>
+        <tr>
+            <td><?= $aluno['matricula'] ?></td>
+            <td><?= $aluno['nome'] ?></td>
+            <td><?= $aluno['curso'] ?></td>
+        </tr>
+    <?php endforeach ?>
+    </table>
+</body>
+</html>
