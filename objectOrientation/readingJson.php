@@ -3,7 +3,7 @@
 Iniciando o trabalho com leitura de json em php
 Exemplo Um, decodificando uma string json simples e a transformano em um objeto php. Imprimindo as variáveis para teste
 */
-$json_string = '{"nome":"Pedro Neri", "idade":19, "Jogos":"League of Legends, Hearthstone, GTAV"}'; // Cria uma string json
+$json_string = '{"nome":"Pedro Neri", "idade":19, "Jogos":["League of Legends", "Hearthstone", "GTAV"]}'; // Cria uma string json
 
 $phpObject = json_decode($json_string); // Usa a função decode e a associa a variável phpObject
 
