@@ -34,6 +34,24 @@ foreach ($funcionarios as $f) // Percorremos e imprimimos o vetor capturado
 }
 
 /*
+Escrevendo arquivos JSON
+*/
+require_once 'user.php';
+
+$user = new User("Pedro", "127.0.0.1", "Rua da lata do lixo, sem esquina");
+
+$person_info = array(
+			"nome" => $user->getNome(),
+			"cpf" => $user->getCpf(),
+			"endereco" => $user->getEndereco()
+		);
+
+$json = json_encode($person_info);
+print '</br>';
+echo $json;
+print '</br>';
+print '</br>';
+/*
 ######################### LINK COM EXEMPLOS ##################
 
 http://www.devmedia.com.br/trabalhando-com-json-em-php/26716
